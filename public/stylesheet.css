@@ -100,14 +100,27 @@ main {
   line-height: 1.05;
   font-weight: 800;
   overflow-wrap: normal;
-  color:hsl(var(--clr-primary-200));
+  color: hsl(var(--clr-primary-200));
   /* text-transform: uppercase; */
   letter-spacing: 0.1rem;
   text-shadow: -0.25rem 0.2rem 0 hsl(var(--clr-primary-900)), -0.45rem 0.25rem 0 hsl(var(--clr-neutral-200));
+  animation: titleAnimation 2s ease-in-out infinite alternate;
 }
 
 .title .highlight {
   color: hsl(var(--clr-accent-100));
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .intro {
