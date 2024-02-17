@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --clr-primary: hsl(75, 94%, 57%);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-grey: hsl(0, 0%, 20%);
+  --clr-neutral-dark-grey: hsl(0, 0%, 12%);
+  --clr-neutral-off-black: hsl(0, 0%, 8%);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-400: 0.875rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--clr-neutral-off-black);
+  color: var(--clr-neutral-white);
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-neutral-off-black);
+  /* background-color: whitesmoke; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  background-color: var(--clr-neutral-dark-grey);
+  /* background-color: blanchedalmond; */
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.image {
+  /* height: 85px; */
+  width: 85px;
+  border-radius: 50%;
+}
+
+.image .profile-image {
+  /* height: 100%; */
+  width: 100%;
+  border-radius: 50%;
+}
+
+.text-basic-info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.text-basic-info .name {
+  color: var(--clr-neutral-white);
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.5rem;
+}
+
+.text-basic-info .address {
+  color: var(--clr-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+}
+
+.text-job {
+  color: var(--clr-neutral-white);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+}
+
+.social-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 18px;
+}
+
+.btn {
+  background-color: var(--clr-neutral-grey);
+  padding: 15px 72px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--clr-neutral-white);
+}
+
+.btn:hover {
+  background-color: var(--clr-primary);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-neutral-white);
+}
+
+.attribution a {
+  color: var(--clr-primary);
+}
