@@ -1,6 +1,6 @@
 export const info = {
   "twitter": "https://twitter.com/LizSnowy",
-  "link": "https://arcestia.github.io/frontendmentor/"
+  "link": "https://skiddle.id/frontendmentor/"
 }
 
 export const challenges = [
