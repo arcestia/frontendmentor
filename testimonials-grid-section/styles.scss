@@ -1,0 +1,227 @@
+// Variables for consistent styling
+$font-family: "Barlow Semi Condensed", sans-serif;
+$background-color-main: hsl(210, 46%, 95%);
+$card-background-color: cadetblue;
+$border-color-1: hsl(263, 69%, 65%);
+$border-color-2: hsl(263, 55%, 52%);
+$text-color-white: hsl(0, 0%, 93%);
+$text-color-light: hsl(0, 0%, 71%);
+$link-color: hsl(228, 45%, 44%);
+$black: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+body {
+  background-color: $background-color-main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  @media (max-width: 1270px) {
+    height: 130vh;
+  }
+
+  @media (max-width: 1030px) {
+    height: 210vh;
+  }
+
+  @media (max-width: 640px) {
+    height: 230vh;
+  }
+
+  @media (max-width: 570px) {
+    height: fit-content;
+    padding-bottom: 1em;
+  }
+}
+
+main {
+  width: 80%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+
+  @media (max-width: 1270px) {
+    flex-direction: column;
+    height: 121vh;
+  }
+
+  @media (max-width: 1030px) {
+    height: 203.5vh;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+    height: 205.5vh;
+  }
+
+  @media (max-width: 570px), (max-width: 340px) {
+    width: 90%;
+    height: fit-content;
+  }
+}
+
+.left {
+  width: 75%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 1270px), (max-width: 1030px) {
+    width: 100%;
+  }
+
+  @media (max-width: 640px), (max-width: 570px) {
+    height: fit-content;
+  }
+}
+
+.row {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1030px) {
+    flex-direction: column;
+    align-items: start;
+    height: 79.5vh;
+  }
+
+  @media (max-width: 570px) {
+    height: fit-content;
+  }
+}
+
+.card {
+  position: relative;
+  padding: 2em;
+  height: 30.5vh;
+  background-color: $card-background-color;
+  border-radius: 10px;
+  z-index: 0;
+
+  @media (max-width: 570px), (max-width: 340px) {
+    margin: 1em 0;
+    height: fit-content;
+  }
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#quote {
+  position: absolute;
+  top: 0;
+  right: 5em;
+  z-index: -1;
+}
+
+.bordered {
+  border: 2px solid $border-color-1;
+}
+
+.bordered2 {
+  border: 2px solid $border-color-2;
+}
+
+h4, .right h3 {
+  color: $black;
+}
+
+.info {
+  font-size: 13px;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 0.7em 0;
+  color: $text-color-white;
+  z-index: 2;
+}
+
+p {
+  font-size: 0.9em;
+  color: $text-color-light;
+}
+
+.right {
+  width: 18%;
+  height: 72vh;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+
+  @media (max-width: 1270px) {
+    width: 93.5%;
+    height: 30.5vh;
+  }
+
+  @media (max-width: 640px), (max-width: 570px), (max-width: 340px) {
+    width: 88%;
+    height: fit-content;
+  }
+}
+
+.right img, .card .top img {
+  width: 2.5em;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: $link-color;
+  }
+}
+
+// Define the mixin for card widths adjustments
+@mixin card-widths {
+  // Adjustments for .card within .row at different breakpoints
+  .row:nth-child(1) .card:nth-child(1), 
+  .row:nth-child(2) .card:nth-child(2) {
+    width: 60%;
+  }
+
+  .row:nth-child(1) .card:nth-child(2), 
+  .row:nth-child(2) .card:nth-child(1) {
+    width: 24%;
+  }
+
+  // Adjustments for smaller screens
+  @media (max-width: 1030px) {
+    .row .card {
+      width: 100%; // Adjust as needed for your design
+    }
+  }
+
+  @media (max-width: 640px) {
+    .row .card {
+      width: 88%; // Example for smaller screens, adjust as needed
+    }
+  }
+
+  @media (max-width: 570px) {
+    .row .card {
+      width: 80%; // Further adjustment for very small screens
+    }
+  }
+}
+
+// Include the mixin to apply the styles
+@include card-widths;
