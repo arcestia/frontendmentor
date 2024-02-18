@@ -5,24 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body tabindex="0">
+  <header>
+    <h1 class="visually-hidden">Advice generator app</h1>
+  </header>
+  <main class="main container">
+    <div class="loading" id="loadingEl" aria-hidden="true">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <article class="advice" id="compEl" tabindex="0">
+      <h2 class="visually-hidden">Advice area: click on dice for advice</h2>
+      <div class="advice-inner">
+        <span class="advice-number"></span>
+        <p class="advice-text"></p>
+      </div>
+      <div class="advice-divider"></div>
+      <button class="dice" id="diceEl">
+        <img
+          src="./images/icon-dice.svg"
+          alt="click here for random advice"
+        />
+      </button>
+    </article>
+  </main>
+  <footer class="footer container">
+    <p class="attribution"></p>
+  </footer>
 </body>
+<script src="./advice.js"></script>
+<script src="../public/js/footer.js" type="module"></script>
 </html>

@@ -198,6 +198,7 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  margin-bottom: 10px;
 }
 
 .row:nth-child(1) .card:nth-child(1),
