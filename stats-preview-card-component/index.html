@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Include your custom CSS styles here -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="component">
+    <div class="card">
+      <picture class="card-image">
+        <source
+          media="(min-width: 800px)"
+          srcset="./images/image-header-desktop.jpg"
+        />
+        <img
+          src="./images/image-header-mobile.jpg"
+          alt="a group of people at a table working in an office"
+        />
+      </picture>
+      <div class="card-content">
+        <div class="container">
+          <h1 class="title">
+            Get <span class="title-highlight">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="textbody">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+        <div class="stats">
+          <p><span class="stats-highlight">10k+ </span><span>companies</span></p>
+          <p><span class="stats-highlight">314 </span><span>templates</span></p>
+          <p><span class="stats-highlight">12M+ </span><span>queries</span></p>          </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution"></div>
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+</body>
+<script src="../public/js/footer.js" type="module"></script>
+</html>

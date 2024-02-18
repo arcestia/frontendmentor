@@ -6,7 +6,7 @@ export const info = {
 export const challenges = [
     {
       "name": "qr-code-component",
-      "title": "Order summary card component",
+      "title": "QR code component",
       "level": "Newbie",
       "internalhost": true,
       "id": 1
@@ -24,5 +24,12 @@ export const challenges = [
       "level": "Junior",
       "internalhost": true,
       "id": 2
+    },
+    {
+      "name": "stats-preview-card-component",
+      "title": "Stats preview card component",
+      "level": "Newbie",
+      "internalhost": true,
+      "id": 3
     },
   ]
