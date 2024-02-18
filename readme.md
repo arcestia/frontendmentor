@@ -12,3 +12,4 @@ Comments and suggestions can be sent via Issues or [@skiddle.id (Bluesky)](https
 - Social links profile
 - Tesminonials grid section
 - Stats preview card component
+- Advice generator app

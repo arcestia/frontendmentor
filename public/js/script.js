@@ -25,8 +25,9 @@ function createCard(item) {
       <article class="text">            
         <h2>
           <a href="${url}">${item.title}</a>
-        </h2>          
+        </h2>    
         <small>
+        <p>${item.desc}</p>
           <a href="${repo}">Github repo</a>
         </small>  
       </article>
