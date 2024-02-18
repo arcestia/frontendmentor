@@ -18,4 +18,11 @@ export const challenges = [
       "internalhost": true,
       "id": 2
     },
+    {
+      "name": "testimonials-grid-section",
+      "title": "Tesminonials grid section",
+      "level": "Junior",
+      "internalhost": true,
+      "id": 2
+    },
   ]
