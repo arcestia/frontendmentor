@@ -1,6 +1,8 @@
 const componentEl = document.getElementById("compEl");
 const diceEl = document.getElementById("diceEl");
 const loadingEl = document.getElementById("loadingEl");
+const adviceNumberEl = componentEl.querySelector(".advice-number");
+const adviceTextEl = componentEl.querySelector(".advice-text");
 
 const url = "https://api.adviceslip.com/advice";
 
@@ -28,11 +30,11 @@ async function loadAdvice() {
             loadingEl.setAttribute("aria-hidden", true);
 
             if (!data) {
-                componentEl.querySelector(".advice-text").textContent =
+                adviceTextEl.textContent =
                     "Sorry, no advice right now, but please check again later!";
             } else {
-                componentEl.querySelector(".advice-number").textContent = `Advice #${data.slip.id}`;
-                componentEl.querySelector(".advice-text").innerHTML = `“${data.slip.advice}”`;
+                adviceNumberEl.textContent = `Advice #${data.slip.id}`;
+                adviceTextEl.innerHTML = `“${data.slip.advice}”`;
                 document.body.focus();
             }
         }, 1000);
