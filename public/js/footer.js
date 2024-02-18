@@ -10,7 +10,7 @@ function createFooter () {
         >Frontend Mentor</a>.
     </span>
     <span class="block-footer">Other <a href=${info.link}>Frontend Mentor Challenges</a
-        > by <a href=${info.twitter}>Laurensius Jeffrey C</a>.
+        > by <a href=${info.github}>Laurensius Jeffrey C</a>.
     </span
   >
     `

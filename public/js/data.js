@@ -1,5 +1,5 @@
 export const info = {
-  "twitter": "https://twitter.com/LizSnowy",
+  "github": "https://github.com/arcestia",
   "link": "https://arcestia.github.io/frontendmentor/"
 }
 
