@@ -13,3 +13,4 @@ Comments and suggestions can be sent via Issues or [@skiddle.id (Bluesky)](https
 - Tesminonials grid section
 - Stats preview card component
 - Advice generator app
+- NFT preview card component

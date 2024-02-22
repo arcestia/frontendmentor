@@ -44,4 +44,12 @@ export const challenges = [
       "internalhost": true,
       "id": 4
     },
+    {
+      "name": "nft-preview-card-component",
+      "title": "NFT preview card component",
+      "desc": "This Project made me love using Sass",
+      "level": "Newbie",
+      "internalhost": true,
+      "id": 5
+    },
   ]
